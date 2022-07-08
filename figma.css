@@ -47,6 +47,10 @@ a {
     display: flex;
     box-sizing: border-box;
 }
+.right img, .right-2 img {
+    display: block;
+    width: 100%;
+}
 .right, .right-2 {
     width: 50%;
 }
@@ -106,14 +110,14 @@ a {
     width: 100%;
 }
 .prod-2 {
-    height: 500px;
+    /* height: 500px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
 }
 .prod-1 {
-    height: 600px;
+    /* height: 600px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -194,8 +198,8 @@ a {
     border-radius: 5px;
 }
 .unHat {
-    height: 370px;
-    width: 1170px;
+    /* heights: 370px; */
+    width: 100%;
     display: flex;
 }
 .unHat-2 {
@@ -204,9 +208,10 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    /* align-items: flex-start; */
     box-sizing: border-box;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 40px;
+    padding-right: 10px;
 }
 .hat h3 {
     padding: 0;
@@ -232,14 +237,14 @@ a {
 }
 .tblock {
     padding: 30px 0px;
-    width: 1170px;
+    width: 90%;
     display: flex;
     justify-content: space-around;
 }
 .bl1, .bl2 {
     box-sizing: border-box;
     padding: 10px;
-    width: 570px;
+    /* width: 570px; */
     height: 260px;
     display: flex;
     flex-direction: column;
@@ -271,7 +276,8 @@ a {
 }
 footer {
     background-color: #FAFAFA;
-    /* display: flex; */
+    /* display: flex;
+    flex-direction: column; */
     /* justify-content: center; */
     box-sizing: border-box;
     padding: 50px;
@@ -310,4 +316,104 @@ h5 {
     margin-top: 40px;
     display: flex;
     justify-content: center;
+}
+@media screen and (max-width: 400px) {
+    .heroSide, .heroSide-2, .left, .right, .cardBlock, .carder, .orangCard, .unHat, .tblock {
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        align-items: flex-start;
+        padding: 0;
+    }
+    .carder, .cardBlock, .p1-2, .orangCard {
+        height: auto;
+    }
+    .p11 {
+        font-size: 18px;
+        height: auto;
+        width: auto;
+    }
+    .tx-11, .tx-12, .side1, .side2, .side3, .p11-2, .p1-2{
+        font-size: 16px;
+        width: auto;
+    }
+    .orangeButt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .unHat-2 {
+        padding: 0;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: auto;
+    }
+    .spisok ul {
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* padding: 0; */
+    }
+    .spisok ul li {
+        padding: 40px;
+    }
+    .ul22 {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .ul22 img {
+        padding: 10px 0;
+    }
+    .bt-2 {
+        margin-left: 0px;
+    }
+    .bt-1, .bt-2 {
+        font-size: 16px;
+        width: auto;
+    }
+    .bl1, .bl2 {
+        flex-wrap: wrap;
+        padding: 0px;
+        width: auto;
+    }
+    .cardBlock h3, .cardText {
+        font-size: 18px;
+    }
+    .side1, .side2, .side3,  {
+        font-size: 16px;
+    }
+    .s1, .s2, .s3 {
+        font-size: 20px;
+    }
+    .right img, .right-2 img {
+        display: block;
+        width: 100%;
+    }
+    .navigationBar {
+        /* flex-wrap: nowrap */
+        justify-content: flex-start;
+    }
+    .navigationBar ul li {
+        padding: 0;
+        font-size: 16px;
+    }
+    .left, .left-2, .prod-2, .prod-1 {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+    }
+    .hat h3, .cardText-2 {
+        font-size: 16px;
+    }
+    .p1, .p1-2 {
+        width: auto;
+    }
+    .navigationBar img {
+        padding-left: 0;
+    }
+    .navigationBar button {
+        width: auto;
+    }
 }
